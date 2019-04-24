@@ -22,9 +22,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_dial_number.setOnClickListener {
-            val phoneNumber = "081327783279"
-            val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
-            startActivity(dialPhoneIntent)
+            val intent = Intent(this,Implisit::class.java)
+            startActivity(intent)
         }
 
     }
